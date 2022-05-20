@@ -13,14 +13,19 @@
      <?php
     
     
-    $largu = $_POST["largu"];
-    $comp = $_POST["comp"];
+    $user = $_POST["user"];
+    $password = $_POST["password"];
 
    
+  
+   if ($user == "etecia" && $password == "etecia238") {
+       echo "Autenticação realizada com sucesso...";
+   }else {
+       echo "Você não tem permissão para visualizar esta pagina...";
+   }
 
-    $result = $largu * $comp;
 
-echo  "A area do Retangulo é :  "  .$result;
+
 
 
 

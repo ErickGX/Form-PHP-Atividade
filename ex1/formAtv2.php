@@ -13,14 +13,21 @@
      <?php
     
     
-    $largu = $_POST["largu"];
-    $comp = $_POST["comp"];
+    $peso = $_POST["peso"];
+    $alt = $_POST["alt"];
 
    
+    $IMC = $peso / ($alt * $alt);
+    
+    if ($IMC >= 25) {
+        echo "Você esta acima do peso" ; 
+    }    else {
+        echo "Voce está saudavél";
+    }
+    
 
-    $result = $largu * $comp;
 
-echo  "A area do Retangulo é :  "  .$result;
+echo  "</br> O seu IMC é :  "  .$IMC;
 
 
 
